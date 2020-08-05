@@ -1,0 +1,55 @@
+body{
+    background: -webkit-linear-gradient(left top, #F68A4B, #07AA4B );
+}
+#grocery-pool-icon{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.cls-1,.cls-2,.cls-6{fill:#fff}
+.cls-1,.cls-2,.cls-3{stroke:#07aa4b;stroke-miterlimit:10}
+.cls-1{stroke-width:7px}
+.cls-2{stroke-width:3px}
+.cls-3{fill:none;stroke-width:4px}
+.cls-4{fill:#07aa4b}
+.cls-5{fill:#dbbd93}
+.cls-6{font-size:36px;font-family:Bauhaus93}
+
+#carrot_left,#carrot_right,#carrot_middle,#carrot_body,#carrot_line1,#carrot_line2,#carrot_line3 {
+    animation: carrot_fly 1s ease alternate infinite;
+}
+
+
+#wine_body,#wine_v,#wine_up,#wine_h,#wine-down{
+    animation: wine_fly 1s ease alternate infinite;
+}
+#bread_1,#bread_2,#bread_3,#bread_body{
+    animation: bread_fly 1s ease alternate infinite;
+}
+
+
+@keyframes carrot_fly {
+    0%{
+        transform: translate3d(0px,0px,0px);
+    }
+    100%{
+        transform: translate3d(-150px,-150px,-150px);
+    }
+}
+@keyframes wine_fly {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-150px);
+    }
+}
+@keyframes bread_fly {
+    0%{
+        transform: translate3d(0px,0px,0px);
+    }
+    100%{
+        transform: translate3d(150px,-150px,150px);
+    }
+}
